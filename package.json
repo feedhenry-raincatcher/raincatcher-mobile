@@ -1,0 +1,68 @@
+{
+  "name": "@raincatcher/demo-mobile",
+  "version": "0.1.1",
+  "description": "Example demo mobile application",
+  "engines": {
+    "node": ">=4.4 <=6.10"
+  },
+  "scripts": {
+    "start": "grunt",
+    "build": "grunt build",
+    "test": "grunt eslint"
+  },
+  "keywords": [
+    "wfm"
+  ],
+  "author": "feedhenry-raincatcher@redhat.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@raincatcher-examples/angularjs-extensions": "0.1.0",
+    "@raincatcher-examples/step-accident": "0.0.5",
+    "@raincatcher-examples/step-vehicle-inspection": "0.0.5",
+    "@raincatcher/angularjs-auth": "0.0.5",
+    "@raincatcher/angularjs-auth-keycloak": "0.1.0",
+    "@raincatcher/angularjs-auth-passport": "0.1.1",
+    "@raincatcher/angularjs-workflow": "0.0.5",
+    "@raincatcher/angularjs-workorder": "0.0.5",
+    "@raincatcher/datasync-client": "0.0.5",
+    "@raincatcher/logger": "0.0.1",
+    "@raincatcher/step-signature": "0.0.1",
+    "@raincatcher/wfm": "0.0.5",
+    "angular": "1.6.4",
+    "angular-animate": "1.6.4",
+    "angular-aria": "1.6.4",
+    "angular-material": "1.1.4",
+    "angular-ui-router": "0.4.2",
+    "async": "1.5.2",
+    "bluebird": "^3.5.0",
+    "debug": "^2.6.3",
+    "fh-js-sdk": "2.18.6",
+    "grunt-cli": "^1.2.0",
+    "keycloak-js": "^3.2.1",
+    "lodash": "4.17.4",
+    "moment": "~2.18.1",
+    "q": "1.5.0",
+    "rx": "~4.1.0",
+    "shortid": "~2.2.6",
+    "underscore": "~1.8.3"
+  },
+  "devDependencies": {
+    "browserify": "13.3.0",
+    "browserify-ngannotate": "~2.0.0",
+    "browserify-shim": "3.8.12",
+    "grunt": "0.4.5",
+    "grunt-browserify": "5.0.0",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-connect": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-eslint": "~18.1.0",
+    "grunt-newer": "1.1.2",
+    "grunt-rev": "0.1.0",
+    "grunt-sass": "1.1.0",
+    "load-grunt-tasks": "3.4.1",
+    "time-grunt": "1.3.0",
+    "uglifyify": "~3.0.4"
+  }
+}

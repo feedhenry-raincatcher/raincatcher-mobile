@@ -1,0 +1,178 @@
+$secondary-text-color: rgba(0,0,0,.54);
+$divider-text-color: rgba(0,0,0,.12);
+
+$white-text-color: rgba(255,255,255,1);
+$white-secondary-text-color: rgba(255,255,255,.7);
+$white-divider-color: rgba(255,255,255,.3);
+
+$primary-color: #3F51B5;
+$secondary-color: #303F9F;
+
+$accent-color-1: #a63db8;
+$accent-color-2: #4d5bb3;
+$accent-color-3: #1aa094;
+$accent-color-4: #283593;
+
+$success: #388E3C;//green700
+$danger: #F44336; //red 500
+
+.success{ color: $success;}
+.danger{ color: $danger;}
+
+@import 'node_modules/@raincatcher/angularjs-workflow/lib/workflow.scss';
+@import 'node_modules/@raincatcher/angularjs-workorder/lib/workorder.scss';
+@import 'node_modules/@raincatcher-examples/step-vehicle-inspection/lib/vehicle-inspection.scss';
+@import 'node_modules/@raincatcher-examples/step-accident/lib/step-accident.scss';
+@import 'node_modules/@raincatcher/step-signature/lib/signature.scss';
+
+.wfm-night{
+  &:after{
+    content: "";
+    background: #F5EDDC;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    mix-blend-mode: multiply;
+     pointer-events: none;
+  }
+}
+
+// Fab ==========
+
+.md-fab{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+// Login screen ==========
+
+.login{
+  background: $primary-color;
+  color: $white-text-color;
+  height: 100%;
+  p{
+    color: $white-secondary-text-color;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  input, input:focus {
+    color: $white-text-color!important;
+  }
+
+  label {
+      color: $white-secondary-text-color !important;
+  }
+
+  md-input-container .md-input{
+    border-color: $white-divider-color;
+    &:focus{
+      border-color: $white-secondary-text-color;
+    }
+  }
+
+  button{
+    width: 100%!important;
+    margin-left: 0px;
+  }
+}
+
+.login .area {
+  height: 100%;
+}
+
+
+.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit; }
+
+
+.sidenav-header{
+  position: relative;
+  color: $white-text-color;
+  background: oldlace;
+  background-image:
+  linear-gradient(135deg, $accent-color-1 18%, transparent 18%),
+  linear-gradient(135deg, rgba(0,0,0,.2) 18%, transparent 19%),
+  linear-gradient(135deg, $accent-color-3 22%, transparent 22%),
+  linear-gradient(135deg, rgba(0,0,0,.2) 22%, transparent 24%),
+  linear-gradient(135deg, $primary-color 35%, transparent 35%),
+  linear-gradient(-45deg, $accent-color-1 5%, transparent 5%),
+  linear-gradient(-45deg, rgba(0,0,0,.2) 5%, transparent 6%),
+  linear-gradient(-45deg, $accent-color-3 7%, transparent 7%),
+  linear-gradient(-45deg, rgba(0,0,0,.1) 7%, transparent 8%),
+  linear-gradient(-45deg, $accent-color-4 20%, transparent 20%),
+  linear-gradient(to bottom, $primary-color 30%, $accent-color-4);
+  padding: 16px;
+  border-bottom: 1px solid $divider-text-color;
+  .md-button{
+//    background: red!important;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    md-icon{color: $white-secondary-text-color!important;}
+  }
+  img{
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    display: block;
+    margin-bottom: 8px;
+    background: rgba(0,0,0,.5);
+  }
+  p{
+    color: $white-secondary-text-color;
+    margin: 0;
+  }
+  h3{margin: 0;}
+}
+
+.spinner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+// wfm-mobile-calendar
+.wfm-mobile-calendar md-datepicker{
+  margin-left: 4px;
+}
+.wfm-mobile-calendar-table{
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid $divider-text-color;
+  tr{
+    border-bottom: 1px solid $divider-text-color;
+  }
+  td{
+    padding: 15px 10px;
+    position: relative;
+  }
+}
+.wfm-mobile-calendar-time{
+  width: 20%;
+  text-align: right;
+  border-right: 1px solid $divider-text-color;
+}
+.wfm-mobile-calendar-entry{
+  background: $secondary-color;
+  color: $white-text-color;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top:5px;
+  left: 10px;
+  right: 10px;
+  height: 20px;
+}
