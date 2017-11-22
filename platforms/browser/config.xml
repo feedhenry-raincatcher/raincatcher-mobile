@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.redhat.demo.wfm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FeedHenry WFM</name>
+    <description>
+      A demo mobile of the Feedhenry RainCatcher
+    </description>
+    <author email="feedhenry-raincatcher@redhat.com" href="http://feedhenry.org">
+      Red Hat Mobile
+  </author>
+    <access origin="*" />
+    <access origin="https://fonts.googleapis.com" />
+    <access origin="https://*.gstatic.com" />
+    <access origin="https://*.amazonaws.com" />
+    <content src="index.html?url=http://localhost:8001" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+</widget>

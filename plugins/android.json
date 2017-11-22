@@ -1,0 +1,45 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.redhat.demo.wfm"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.redhat.demo.wfm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
+    <name>FeedHenry WFM</name>
+    <description>
+      A demo mobile of the Feedhenry RainCatcher
+    </description>
+    <author email="feedhenry-raincatcher@redhat.com" href="http://feedhenry.org">
+      Red Hat Mobile
+  </author>
+    <access origin="*" />
+    <access origin="https://fonts.googleapis.com" />
+    <access origin="https://*.gstatic.com" />
+    <access origin="https://*.amazonaws.com" />
+    <content src="index.html?url=http://localhost:8001" />
+    <icon density="ldpi" src="www/res/icons/android/icon.png" />
+    <icon density="mdpi" src="www/res/icons/android/icon-mdpi.png" />
+    <icon density="hdpi" src="www/res/icons/android/icon-hdpi.png" />
+    <icon density="xhdpi" src="www/res/icons/android/icon-xhdpi.png" />
+    <icon density="xxhdpi" src="www/res/icons/android/icon-xxhdpi.png" />
+    <icon density="xxxhdpi" src="www/res/icons/android/icon-xxxhdpi.png" />
+    <splash density="land-hdpi" src="www/res/splash/android/splash-land-hdpi.png" />
+    <splash density="land-ldpi" src="www/res/splash/android/splash-land-ldpi.png" />
+    <splash density="land-mdpi" src="www/res/splash/android/splash-land-mdpi.png" />
+    <splash density="land-xhdpi" src="www/res/splash/android/splash-land-xhdpi.png" />
+    <splash density="port-hdpi" src="www/res/splash/android/splash-port-hdpi.png" />
+    <splash density="port-ldpi" src="www/res/splash/android/splash-port-ldpi.png" />
+    <splash density="port-mdpi" src="www/res/splash/android/splash-port-mdpi.png" />
+    <splash density="port-xhdpi" src="www/res/splash/android/splash-port-xhdpi.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreen" value="screen" />
+</widget>
