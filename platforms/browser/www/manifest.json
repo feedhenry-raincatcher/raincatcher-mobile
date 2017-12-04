@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "FeedHenry WFM",
+  "short_name": "FeedHenry WFM",
+  "version": "com.redhat.demo.wfm",
+  "description": "A demo mobile of the Feedhenry RainCatcher",
+  "author": "Red Hat Mobile",
+  "icons": [],
+  "start_url": "index.html?url=http://localhost:8001"
+}

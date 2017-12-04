@@ -1,0 +1,29 @@
+{
+  "sync": {
+    "forceSyncDelay": 6,
+    "datasetIds": {
+      "workorders": "workorders"
+    },
+    "cloudPath": "/sync/",
+    "syncOptions": {
+      "global": {
+        "sync_frequency": 20,
+        "storage_strategy": "dom"
+      },
+      "workorders": {
+        "sync_frequency": 10
+      }
+    }
+  },
+  "keycloak": {
+    "realm": "raincatcher",
+    "url": "http://localhost:8080/auth",
+    "ssl-required": "external",
+    "clientId": "raincatcher-mobile",
+    "public-client": true,
+    "use-resource-role-mappings": true
+  },
+  "keycloakInit": {
+    "onLoad": "login-required"
+  }
+}
